@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a onclick="navigate(this.href)" href="https://www.notion.so/lindo/INCX-documents-8cba68fa64db4408891bf27c38bec46b"> <i class="fa-solid fa-house"></i> 首頁</a>
+		<a onclick="navigate(this.href)" href="https://www.notion.so/lindo/2f4deff7cc5c4d23bb2cf2908af1fb11?v=2c1df06b332f4f5087363782549d00fe"> <i class="fa-solid fa-image-portrait""></i> 個人資料夾</a>
+		<a onclick="navigate(this.href)" href="https://www.notion.so/lindo/5c5fb93ecab94ece952869e982f5afcc?v=52a538804a764797afb9287e8a3db4a7"> <i class="fa-solid fa-folder-tree"></i> 文件系統</a>
+		<a onclick="navigate(this.href)" href="https://www.notion.so/lindo/a6a3ba5ebb5c443ebd47720b1380565e?v=c39fc1e5c4184197848ee2cc9849f7ea"> <i class="fa-solid fa-book-skull"></i> 實驗記錄</a>
+		<a onclick="navigate(this.href)" href="https://www.notion.so/lindo/Sylvia-FPD-a78094c57ab44f8d95ff1e3e714f41e8"> <i class="fa-solid fa-money-bill-wave"></i> FPD資料庫</a>
+		<a onclick="navigate(this.href)" href="https://www.notion.so/lindo/Meeting-minutes-a4bf3083390f4cbebfa852aba4676baa"> <i class="fa-solid fa-layer-group"></i> 會議</a>
+		<a onclick="navigate(this.href)" href="https://www.notion.so/lindo/31d167c0e5c34c33a480fa7b6519bc27?v=260fdde7e5ee49d6b5345ea51d78d29e"> <i class="fa-solid fa-book"></i> 暫存資料</a>
+		<a onclick="navigate(this.href)" href="#"> <i class="fa-solid fa-wrench"></i> 參考資料</a>
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+		function navigate(url) {
+            window.location.href = url;
+		}
+	</script>
+
+
+</body>
+
+</html>
